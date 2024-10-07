@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    active:
+      - dev # 활성화할 프로필 설정
