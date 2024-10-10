@@ -7,14 +7,14 @@
     {{#boardList}}
         <div class="card mb-3">
             <div class="card-body">
-                <h4 class="card-title mb-3">{{title}}</h4>
+                <h4 class="card-title mb-3">{{title}} | 작성자 : {{user.username}} </h4>
                 <a href="/board/{{id}}" class="btn btn-primary">상세보기</a>
             </div>
         </div>
     {{/boardList}} <!-- 반드시 섹션을 닫는 태그가 필요 -->
 
     <!-- 게시글이 없을 경우 출력할 내용 -->
-    {{^boardList}}
+    {{^boardList}} <!-- 역섹션 태그 -->
         <p>게시글이 없습니다.</p>
     {{/boardList}}
 
